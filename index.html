@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>Todo List</title>
+    <link rel="shortcut icon" href="https://cdn2.iconfinder.com/data/icons/productivity/256/To_Do_List-512.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <style>
+        .homeContainer,
+        .newBook{
+            text-align: center;
+            margin-top: 5rem;
+        }
+        .Tabelwrap{
+            display: flex;
+            justify-content: center;
+            max-width: 95%;
+            margin: 2rem auto;
+        }
+        th,td{
+            padding:1rem;
+            border: 1px solid gray; 
+        }
+        .navList{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            background-color: gray;
+        }
+        .navList li{
+            list-style: none;
+            padding:1rem;
+        }
+        .navList li a{
+            color:white;
+        }
+        .wrapLabels{
+            display: flex;
+            flex-direction: column;
+        }
+        #description{
+            width: 25%;
+        }
+        @media(max-width: 320px){
+            .navList li a{
+                font-size: .9rem;
+            }
+            h1{
+                font-size: 1.8rem;
+            }
+            h3{
+                font-size: 1.2rem;
+            }
+            td,th{
+                padding: .5rem .2rem;
+                font-size: .8rem;
+            }
+
+        }
+    </style>
+
+
+</head>
+<body>
+    <div id='root'></div>
+    <script src="static/bundle.js"></script>
+</body>
+</html>
